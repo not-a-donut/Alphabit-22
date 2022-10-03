@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist';
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+body{
+    background-color: #11102c;
+    /* padding: 1rem; */
+}
+.landing-page{
+    background-image: url('/images/home-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
+    height: 90vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-top: 5rem;
+    padding: 4rem 2rem 2rem 2rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.landing-page-bottom{
+    display: flex;
+    flex-direction: row;
+    border-right: 1px solid rgb(111, 110, 141);
+    border-left: 1px solid rgb(111, 110, 141);
+    max-width: 80%;
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+    /* border-radius: 30px; */
+}
+.hr{
+    margin: 0rem auto;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    width: 60%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.408);
+    z-index: 98;
+}
+.primary-heading{
+    color: white;
+    font-size: 95px;
+    width: 60%;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 5px 5px 2px rgba(29, 116, 136, 0.445);
+    /* border: 2px solid red; */
+    /* margin-bottom: 3rem; */
+}
+.alphabit-logo{
+    height: 20rem;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    /* background-color: rgba(122, 203, 238, 0.35); */
+    justify-content: center;
+    /* border-right: 1px solid rgb(111, 110, 141); */
+    border-radius: 30px;
+    /* margin: 0 1rem; */
+}
+.alphabit-logo img{
+    height: 70%;
+}
+.primary-caption{
+    /* border: 2px solid red; */
+    /* background-color: rgba(122, 203, 238, 0.35); */
+    padding: 3rem;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    /* margin: 0 1rem; */
+}
+.stats{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 3rem; */
+    background-image: url('/images/stats-bg.png');
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+.stats-element:hover{
+    transform: scale(1.1);
+    transition: all;
+    transition-duration: 0.1s;
+}
+.stats-div{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    /* border: 2px solid yellow; */
+    /* width: 80%; */
+    /* padding: 0 3rem; */
+    /* max-width: 90%; */
+}
+.stats-element{
+    text-align: center;
+    cursor: pointer;
+    height: 17rem;
+    /* border: 2px solid red; */
+    width: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 0rem 2rem;
+    padding: 2rem;
+    background-color: #05bcffb5;
+    border-radius: 20px;
+    transition: all;
+    transition-duration: 0.1s;
+}
+.stats-number{
+    font-size: 80px;
+    font-weight: 900;
+}
+.stats-caption{
+    font-size: 160%;
+    font-weight: 900;
+}
+@media only screen and (max-width: 1196px) {
+    .primary-heading{
+        font-size: 70px;
+        width: 70%;
+    }
+    .primary-caption{
+        font-size: 20px;
+    }
+    .landing-page-bottom{
+        max-width: 95%;
+    }
+    .hr{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 828px) {
+    .landing-page-bottom{
+        flex-direction: column;
+        max-width: 100%;
+        border: none;
+    }
+    .alphabit-logo{
+        border-bottom: 1px solid rgb(111, 110, 141);
+        border-radius: 0px;
+        height: 17rem;
+    }
+    .alphabit-logo img{
+        height: 70%;
+    }
+    .primary-caption{
+        border-radius: 0px;
+    }
+    .landing-page{
+        margin-top: 0;
+        padding: 2rem;
+    }
+    .primary-heading{
+        font-size: 40px;
+    }
+}
+.timeline{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 30px;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 544px){
+    .primary-caption{
+        font-size: 18px;
+        padding-top: 1rem ;
+    }
+    .alphabit-logo{
+        /* margin-top: 0; */
+        padding: 0 0 1rem 0;
+        height: 10rem;
+    }
+    .alphabit-logo img{
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 1314px) {
+    .stats-element{
+        height: 10rem;
+        width: 10rem;
+        padding: 2rem;
+    }
+    .stats-number{
+        font-size: 40px;
+    }
+    .stats-caption{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 896px) {
+    .stats-div{
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .stats-element{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .stats{
+        background-size: 300%;
+        background: none;
+    }
+}
+@media only screen and (max-width: 896px) {
+    .stats{
+        margin-top: 12rem;
+    }
+    .footer img{
+        height: 3rem;
+    }
+}

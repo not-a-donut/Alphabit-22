@@ -1,0 +1,175 @@
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    padding: 0rem 0.5rem;
+    font-family: 'Urbanist';
+    background-color:#001022;
+    top: 0;
+}
+.burger-icon{
+    display: none;
+}
+.navbar-logo{
+    /* border: 2px solid purple; */
+}
+.navbar-phone{
+    display: none;
+}
+.navbar-logo img{
+    height: 70%;
+    margin: auto 0;
+}
+.navbar-elements{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-el{
+    /* border: 2px solid red; */
+    display: flex;
+}
+.navbar-element-link{
+    color: white;
+    /* border: 2px solid red; */
+    align-self: center;
+    justify-self: center;
+    margin: 0 2rem;
+    font-size: 19px;
+    font-weight: 300;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.navbar-element:hover{
+    color: #00b0f0;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.register-button-link{
+    margin: auto 1rem auto 0rem;
+}
+.register-button{
+    padding: 0.8rem 1.2rem;
+    font-family: 'Urbanist';
+    background-color: #05bcff;
+    color: #001022;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: all;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    border: none;
+}
+.register-button:hover{
+    color: white;
+    transition: all;
+    background-color: #00b0f0;
+    transition-duration: 0.3s;
+    transition: all;
+}
+@media only screen and (max-width: 1076px) {
+    .navbar-element-link{
+        margin: 0 1rem;
+        font-size: 15px;
+    }
+    .navbar-logo img{
+        height: 50%;
+    }
+}
+@media only screen and (max-width: 828px) {
+    .navbar{
+        display: none;
+    }
+    .navbar-phone{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 5rem;
+        align-items: center;
+        background-color: #001022;
+    }
+    #center-phone{
+        display: none;
+        /* color: white; */
+        margin: auto;
+        background-color: #001022f6;
+        width: 100%;
+        padding: 1rem;
+        z-index: 99;
+        height: 100vh;
+        /* border: 2px solid red; */
+    }
+    .navbar-elements-phone{
+        margin: auto auto;
+    }
+    .navbar-element-phone{
+        margin-top: 4rem;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .navbar-element-link-phone{
+        color: white;
+        font-family: 'Urbanist';
+    }
+    #navbar-logo-phone img{
+        height: 70%;
+        z-index: 100;
+    }
+    .first{
+        /* margin-top: 7rem; */
+    }
+    #navbar-logo-phone{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 100;
+        left: 0.5rem;
+        height: 5rem;
+    }
+    .burger-icon{
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid red; */
+        position: absolute;
+        right: 0;
+        width: 5rem;
+        z-index: 99;
+        /* margin-right: 0.5rem; */
+    }
+    .burger{
+        /* border: 2px solid red; */
+        transform: scale(1.2);
+        cursor: pointer;
+        z-index: 99;
+    }
+}
+.footer{
+    display: flex;
+    width: 100%;
+    /* margin-top: 3rem; */
+    background-color: #001022;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.footer img{
+    height: 5rem;
+}
+.footer-caption{
+    margin-top: 1rem;
+    color: #97a8cf;
+    text-align: center;
+}

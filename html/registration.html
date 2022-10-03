@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabit'22 - Registration</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/events.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cbf74a5bf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <navbar class="navbar">
+        <div class="navbar-logo navbar-el">
+            <img src="/images/navbar-logo.png" alt="error loading image">
+        </div>
+        <div class="center navbar-el">
+            <ul class="navbar-elements">
+                <a href="/html/home.html" class="navbar-element-link"><li class="navbar-element">HOME</li></a>
+                <a href="/html/events.html" class="navbar-element-link"><li class="navbar-element">EVENTS</li></a>
+                <a href="/html/invite.html" class="navbar-element-link"><li class="navbar-element">INVITE</li></a>
+                <a href="/html/team.html" class="navbar-element-link"><li class="navbar-element">TEAM</li></a>
+                <a href="/html/contact.html" class="navbar-element-link"><li class="navbar-element">CONTACT US</li></a>
+            </ul>
+        </div>
+        <div class="register-button-div navbar-el">
+            <a href="/html/registration.html" class="register-button-link"><button class = "register-button">Register now</button></a>
+        </div>
+    </navbar>
+    <navbar class="navbar-phone">
+        <div class="navbar-el" id="navbar-logo-phone">
+            <img src="/images/navbar-logo.png" alt="error loading image">
+        </div>
+        <div id="center-phone" class="navbar-el-phone">
+            <ul class="navbar-elements-phone">
+                <a href="/html/home.html" class="navbar-element-link-phone"><li class="navbar-element-phone first">HOME</li></a>
+                <a href="/html/events.html" class="navbar-element-link-phone"><li class="navbar-element-phone">EVENTS</li></a>
+                <a href="/html/invite.html" class="navbar-element-link-phone"><li class="navbar-element-phone">INVITE</li></a>
+                <a href="/html/team.html" class="navbar-element-link-phone"><li class="navbar-element-phone">TEAM</li></a>
+                <a href="/html/contact.html" class="navbar-element-link-phone"><li class="navbar-element-phone">CONTACT US</li></a>
+                <a href="/html/registration.html" class="navbar-element-link-phone"><li class="navbar-element-phone">REGISTRATION</li></a>
+            </ul>
+        </div>
+        <div class="burger-icon">
+            <i class="fa-solid fa-bars fa-2xl burger" onclick="navbarPhone()"></i>
+        </div>
+    </navbar>
+    <section class="main">
+        <h1 class="primary-heading">REGISTER YOURSELF HERE</h1>
+        <img src="/images/sample invite.png" alt="" class="invite">
+    </section>
+    <section class="footer">
+        <img src="/images/navbar-logo.png" alt="" class="footer-logo">
+        <p class="footer-caption">Copyright © 2022, Amity International School, Saket</p>
+        <p class="footer-caption">Website created by Devik Nangia</p>
+    </section>
+    <script>
+        function navbarPhone() {
+            var list = document.getElementById("center-phone");
+            var logo = document.getElementById("navbar-logo-phone");
+            if (list.style.display === "flex") {
+                list.style.display = "none";
+                // logo.style.display = "flex";
+            } else {
+                list.style.display = "flex";
+                // logo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

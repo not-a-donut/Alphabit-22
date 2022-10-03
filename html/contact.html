@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabit'22 - Contact</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cbf74a5bf6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <navbar class="navbar">
+        <div class="navbar-logo navbar-el">
+            <img src="/images/navbar-logo.png" alt="error loading image">
+        </div>
+        <div class="center navbar-el">
+            <ul class="navbar-elements">
+                <a href="/html/home.html" class="navbar-element-link"><li class="navbar-element">HOME</li></a>
+                <a href="/html/events.html" class="navbar-element-link"><li class="navbar-element">EVENTS</li></a>
+                <a href="/html/invite.html" class="navbar-element-link"><li class="navbar-element">INVITE</li></a>
+                <a href="/html/team.html" class="navbar-element-link"><li class="navbar-element">TEAM</li></a>
+                <a href="/html/contact.html" class="navbar-element-link"><li class="navbar-element">CONTACT US</li></a>
+            </ul>
+        </div>
+        <div class="register-button-div navbar-el">
+            <a href="/html/home.html" class="register-button-link"><button class = "register-button">Register now</button></a>
+        </div>
+    </navbar>
+    <navbar class="navbar-phone">
+        <div class="navbar-el" id="navbar-logo-phone">
+            <img src="/images/navbar-logo.png" alt="error loading image">
+        </div>
+        <div id="center-phone" class="navbar-el-phone">
+            <ul class="navbar-elements-phone">
+                <a href="/html/home.html" class="navbar-element-link-phone"><li class="navbar-element-phone first">HOME</li></a>
+                <a href="/html/events.html" class="navbar-element-link-phone"><li class="navbar-element-phone">EVENTS</li></a>
+                <a href="/html/invite.html" class="navbar-element-link-phone"><li class="navbar-element-phone">INVITE</li></a>
+                <a href="/html/team.html" class="navbar-element-link-phone"><li class="navbar-element-phone">TEAM</li></a>
+                <a href="/html/contact.html" class="navbar-element-link-phone"><li class="navbar-element-phone">CONTACT US</li></a>
+                <a href="/html/registration.html" class="navbar-element-link-phone"><li class="navbar-element-phone">REGISTRATION</li></a>
+            </ul>
+        </div>
+        <div class="burger-icon">
+            <i class="fa-solid fa-bars fa-2xl burger" onclick="navbarPhone()"></i>
+        </div>
+    </navbar>
+    <section class="text-gray-100 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="text-8xl font-bold title-font mb-4 text-gray-100 mt-10">Get in touch !</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Reach out to us by sending us a message</p>
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="name" class="leading-7 text-sm text-gray-100">Name</label>
+                  <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="email" class="leading-7 text-sm text-gray-100">Email</label>
+                  <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="message" class="leading-7 text-sm text-gray-100">Message</label>
+                  <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+              </div>
+              <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                <a class="text-indigo-500">example@email.com</a>
+                <p class="leading-normal my-5">Amity International School, Saket - M-block
+                  <br>New Delhi - 110017
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section class="footer">
+        <img src="/images/navbar-logo.png" alt="" class="footer-logo">
+        <p class="footer-caption">Copyright © 2022, Amity International School, Saket</p>
+        <p class="footer-caption">Website created by Devik Nangia</p>
+    </section>
+    <script>
+        function navbarPhone() {
+            var list = document.getElementById("center-phone");
+            var logo = document.getElementById("navbar-logo-phone");
+            if (list.style.display === "flex") {
+                list.style.display = "none";
+                // logo.style.display = "flex";
+            } else {
+                list.style.display = "flex";
+                // logo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

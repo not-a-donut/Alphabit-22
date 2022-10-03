@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabit'22 - Team</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/team.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cbf74a5bf6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <navbar class="navbar">
+        <div class="navbar-logo navbar-el">
+            <img src="/images/navbar-logo.png" alt="error loading image">
+        </div>
+        <div class="center navbar-el">
+            <ul class="navbar-elements">
+                <a href="/html/home.html" class="navbar-element-link"><li class="navbar-element">HOME</li></a>
+                <a href="/html/events.html" class="navbar-element-link"><li class="navbar-element">EVENTS</li></a>
+                <a href="/html/invite.html" class="navbar-element-link"><li class="navbar-element">INVITE</li></a>
+                <a href="/html/team.html" class="navbar-element-link"><li class="navbar-element">TEAM</li></a>
+                <a href="/html/contact.html" class="navbar-element-link"><li class="navbar-element">CONTACT US</li></a>
+            </ul>
+        </div>
+        <div class="register-button-div navbar-el">
+            <a href="/html/home.html" class="register-button-link"><button class = "register-button">Register now</button></a>
+        </div>
+    </navbar>
+    <navbar class="navbar-phone">
+        <div class="navbar-el" id="navbar-logo-phone">
+            <img src="/images/navbar-logo.png" alt="error loading image">
+        </div>
+        <div id="center-phone" class="navbar-el-phone">
+            <ul class="navbar-elements-phone">
+                <a href="/html/home.html" class="navbar-element-link-phone"><li class="navbar-element-phone first">HOME</li></a>
+                <a href="/html/events.html" class="navbar-element-link-phone"><li class="navbar-element-phone">EVENTS</li></a>
+                <a href="/html/invite.html" class="navbar-element-link-phone"><li class="navbar-element-phone">INVITE</li></a>
+                <a href="/html/team.html" class="navbar-element-link-phone"><li class="navbar-element-phone">TEAM</li></a>
+                <a href="/html/contact.html" class="navbar-element-link-phone"><li class="navbar-element-phone">CONTACT US</li></a>
+                <a href="/html/registration.html" class="navbar-element-link-phone"><li class="navbar-element-phone">REGISTRATION</li></a>
+            </ul>
+        </div>
+        <div class="burger-icon">
+            <i class="fa-solid fa-bars fa-2xl burger" onclick="navbarPhone()"></i>
+        </div>
+    </navbar>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="text-8xl font-bold title-font mb-4 text-gray-100 mt-10">Meet our team</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-xl">The strength of the team is it's each individual member. The strength of each member is the team.</p>
+          </div>
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
+                <div class="flex-grow">
+                  <h2 class="text-gray-100 title-font font-medium">Aditya Khuntia</h2>
+                  <p class="text-gray-500">Event head</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/84x84">
+                <div class="flex-grow">
+                  <h2 class="text-gray-100 title-font font-medium">Saksham Jain</h2>
+                  <p class="text-gray-500">Event head gaming</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/88x88">
+                <div class="flex-grow">
+                  <h2 class="text-gray-100 title-font font-medium">Pranav Chahal</h2>
+                  <p class="text-gray-500">Event head designing</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/90x90">
+                <div class="flex-grow">
+                  <h2 class="text-gray-100 title-font font-medium">Kavya Gupta</h2>
+                  <p class="text-gray-500">Event head coding</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/94x94">
+                <div class="flex-grow">
+                  <h2 class="text-gray-100 title-font font-medium">Devik Nangia</h2>
+                  <p class="text-gray-500">Website developer</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/98x98">
+                <div class="flex-grow">
+                  <h2 class="text-gray-100 title-font font-medium">Jai Bahl</h2>
+                  <p class="text-gray-500">Event head design</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/100x90">
+                <div class="flex-grow">
+                  <h2 class="text-gray-100 title-font font-medium">Apaar Mathur</h2>
+                  <p class="text-gray-500">Event head designing</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/104x94">
+                <div class="flex-grow">
+                  <h2 class="text-gray-100 title-font font-medium">Aditya Khuntia</h2>
+                  <p class="text-gray-500">Event head</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/108x98">
+                <div class="flex-grow">
+                  <h2 class="text-gray-100 title-font font-medium">Pranav Chahal</h2>
+                  <p class="text-gray-500">Event head designing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section class="footer">
+        <img src="/images/navbar-logo.png" alt="" class="footer-logo">
+        <p class="footer-caption">Copyright © 2022, Amity International School, Saket</p>
+        <p class="footer-caption">Website created by Devik Nangia</p>
+    </section>
+    <script>
+        function navbarPhone() {
+            var list = document.getElementById("center-phone");
+            var logo = document.getElementById("navbar-logo-phone");
+            if (list.style.display === "flex") {
+                list.style.display = "none";
+                // logo.style.display = "flex";
+            } else {
+                list.style.display = "flex";
+                // logo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

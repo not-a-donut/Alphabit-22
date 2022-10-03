@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist';
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+body{
+    background-image: url('/images/home-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-attachment: fixed;
+    background-color: #001022;
+}
